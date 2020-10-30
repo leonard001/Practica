@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'ic-project-poli';
+  titleHello:string;
+  constructor(){}
+
+  ngOnInit(): void {
+   let message = 'Hola mundo'
+   this.titleHello = message
+  }
 }

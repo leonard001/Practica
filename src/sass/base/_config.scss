@@ -1,0 +1,35 @@
+/* VARIABLES */
+
+// Colors
+
+$black: #000;
+$dGrayBrand: #3C3A33;
+$lGrayBrand: #615f5d;
+$dRedBrand: #972723;
+$lRedBrand: #c33732;
+$lRedBrand2: #AC3F2F;
+$blueBrand: #32476f;
+$white: #FFF;
+
+$txtGray: #dfdfdf;
+
+// Global Font
+$fontFamily:'Poppins', sans-serif;
+$baseFont: 16;
+
+// Loader
+$bgLoader: $black;
+$colorLoader: $white;
+
+$widthLoader: 100px;
+
+// -- to animation
+$colorLoader1: red;
+$colorLoader2: green;
+$colorLoader3: purple;
+$colorLoader4: yellow;
+
+// Modal
+$bgModal: $black;
+$maxWModal: 300px;
+$minHModal: 200px;

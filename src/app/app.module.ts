@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PagesModule } from './pages/pages.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 
 
@@ -16,7 +18,9 @@ import { PagesModule } from './pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    PagesModule
+    PagesModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

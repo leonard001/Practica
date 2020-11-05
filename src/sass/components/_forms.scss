@@ -26,207 +26,28 @@ form {
 }
 
 .form {
-
   width: 100%;
+  display: flex;
+  flex-direction: column;
 
-
-  &--information {
-    @include flex(flex-start, flex-start);
-
-    .form {
-      &__title {
-        @include fontSize(25);
-        text-transform: uppercase;
-        color: $blueBrand;
-        padding-bottom: 50px;
-
-        @media #{$mediaMobile} {
-          @include fontSize(20);
-
-        }
-      }
-
-      &__box {
-        width: 50%;
-        min-height: 50px;
-        margin-bottom: 25px;
-        padding-right: 15px;
-        position: relative;
-
-        @media #{$mediaMobile} {
-          width: 100%;
-        }
-
-        &--full {
-          width: 100%;
-        }
-      }
-
-      &__input,
-      &__select,
-      &__textarea {
-        width: 100%;
-        min-height: inherit;
-        padding: 10px;
-        border: none;
-        border-bottom: 1px solid rgba($lGrayBrand, .5);
-        color: $dGrayBrand;
-        font-family: $ftMontserratSB;
-
-        @include placeholder {
-          color: currentColor;
-        }
-
-        &.no-valid {
-          border-color: $lRedBrand;
-        }
-      }
-
-      &__textarea {
-        min-height: 110px;
-        resize: none;
-        border: 1px solid rgba($lGrayBrand, .5);
-      }
-
-      &__bottom {
-        width: 100%;
-        text-align: right;
-        padding-right: 15px;
-      }
-    }
+  &__box {
+    width: 100%;
+    position: relative;
   }
 
-  &--newsletter {
-    // @include flex(flex-start, flex-start);
+  &--login {
+    max-width: 400px;
+    margin: auto;
+    padding: 40px 35px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.16);
+    border-radius: 10px;
 
     .form {
       &__title {
         @include fontSize(20);
         text-transform: uppercase;
-        padding-bottom: 10px;
-        font-family: $ftQuickL;
-
-        @media #{$mediaMobile} {
-          @include fontSize(16);
-        }
-
-        p {
-          margin: 0;
-        }
+        margin-bottom: 20px;
       }
-
-      &__box {
-        width: 100%;
-        min-height: 30px;
-        margin-bottom: 5px;
-        position: relative;
-      }
-
-      &__input {
-        width: 100%;
-        min-height: inherit;
-        padding: 10px;
-        padding-right: 52px;
-        border: none;
-        border-bottom: 1px solid rgba($white, .2);
-        color: $white;
-        font-family: $ftMontserratR;
-        background: transparent;
-
-        @include placeholder {
-          color: currentColor;
-        }
-      }
-
-      &__submit-mask {
-        cursor: pointer;
-        position: absolute;
-        display: flex;
-        top: 0;
-        right: 15px;
-        width: 35px;
-        height: 35px;
-        padding: 4px;
-
-        input {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          opacity: 0;
-          z-index: -1;
-        }
-      }
-
-      &__terms {
-        font-size: 12px;
-      }
-    }
-  }
-
-  &--search {
-    margin-left: 10px;
-    max-width: 300px;
-
-    .form {
-
-      &__box {
-        width: 100%;
-        min-height: 30px;
-        margin-bottom: 5px;
-        position: relative;
-
-        @media #{$mediaMobile} {
-          width: 60px;
-          margin-bottom: 0;
-        }
-      }
-
-      &__input {
-        width: 100%;
-        min-height: inherit;
-        padding: 10px;
-        padding-right: 52px;
-        border: none;
-        border-bottom: 1px solid rgba($dGrayBrand, .5);
-        color: $dGrayBrand;
-        font-family: $ftMontserratR;
-        background: transparent;
-
-        @include placeholder {
-          color: currentColor;
-        }
-
-        @media #{$mediaMobile} {
-          opacity: 0;
-          width: 0;
-        }
-      }
-
-      &__submit-mask {
-        cursor: pointer;
-        position: absolute;
-        display: flex;
-        top: 0;
-        right: 15px;
-        width: 30px;
-        height: 30px;
-        padding: 4px;
-
-        input {
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          width: 100%;
-          opacity: 0;
-          z-index: -1;
-        }
-      }
-
     }
   }
 }

@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PagesModule } from './pages/pages.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { ComponentsModule } from './components/components.module';
 
 
 
@@ -20,7 +21,8 @@ import { MaterialModule } from './material/material.module';
     HttpClientModule,
     PagesModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

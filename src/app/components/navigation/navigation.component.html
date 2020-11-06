@@ -4,18 +4,16 @@
   </button>
   <span> AbuelApp</span>
   <span class="example-spacer"></span>
-
 </mat-toolbar>
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
     <p>Auto-resizing sidenav</p>
-
     <mat-nav-list>
-      <mat-list-item *ngFor="let link of folders">
+      <mat-list-item *ngFor="let link of folders" (click)="drawer.toggle()">
         <button mat-icon-button (click)="showInfo(link)">
            <mat-icon>info</mat-icon>
         </button>
-         <a matLine routerLink="/login">{{ link.name }}</a>
+         <a matLine [routerLink]="link.url">{{ link.name }}</a>
       </mat-list-item>
     </mat-nav-list>
   </mat-drawer>

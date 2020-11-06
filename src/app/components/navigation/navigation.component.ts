@@ -12,12 +12,15 @@ export class NavigationComponent implements OnInit {
     this.folders = [
       {
         name:'Registro',
+        url:'home'
       },
       {
         name:'Servicios',
+        url:'Services'
       },
       {
         name:'Medicamentos',
+        url:'medical-service'
       },
     ]
   }

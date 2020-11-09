@@ -11,16 +11,16 @@ export class NavigationComponent implements OnInit {
   ngOnInit() {
     this.folders = [
       {
-        name:'Registro',
+        name:'Inicio',
         url:'home'
       },
       {
         name:'Servicios',
-        url:'Services'
+        url:'services'
       },
       {
         name:'Medicamentos',
-        url:'medical-service'
+        url:'medical'
       },
     ]
   }

@@ -5,15 +5,18 @@ import { LoginComponent } from './login/login.component';
 import { MaterialModule } from '../material/material.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { MedicalServicesComponent } from './medical-services/medical-services.component';
+import { ComponentsModule } from '../components/components.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
 @NgModule({
-  declarations: [HomepageComponent, LoginComponent, MedicalServicesComponent],
+  declarations: [HomepageComponent, LoginComponent, MedicalServicesComponent, DashboardComponent],
   imports: [
     CommonModule,
     MaterialModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ComponentsModule
   ]
 })
 export class PagesModule { }

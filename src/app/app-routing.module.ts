@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MedicalServicesComponent } from './pages/medical-services/medical-services.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -11,17 +12,25 @@ const routes: Routes = [
     component:LoginComponent
   },
   {
-    path:'home',
-    component:HomepageComponent
-  },
-  {
-    path:'medical-service',
-    component:MedicalServicesComponent
+    path:'dashboard',
+    component:DashboardComponent,
+    children:[
+      {
+        path:'home',
+        component:HomepageComponent
+      },
+      {
+        path:'medical',
+        component:MedicalServicesComponent
+      }
+    ]
   },
   {
     path:'**',
     redirectTo:'/login'
-  }
+  },
+  // { path: '',   redirectTo: '/login', pathMatch: 'full' },
+  // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

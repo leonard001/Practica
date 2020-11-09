@@ -34,12 +34,25 @@
 }
 
 .example-sidenav-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // height: 100%;
+  // align-items: flex-start;
+  // justify-content: center;
 }
 
 .example-sidenav {
   padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
 }

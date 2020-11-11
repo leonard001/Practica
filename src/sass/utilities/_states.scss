@@ -1,9 +1,0 @@
-*.hide, .hide {
-	opacity: 0;
-	pointer-events: none !important;
-	@include transition;
-}
-
-*.hidden, .hidden {
-	display: none !important;
-}

@@ -1,0 +1,22 @@
+<section class="fullBox">
+  <div class="fullBox__content">
+    <form  autocomplete="off" class="form form--login" (ngSubmit)="handleLogin()">
+      <h1 class="form__title taC">Login</h1>
+      <mat-form-field appearance="legacy">
+        <mat-label>Correo electrónico</mat-label>
+        <input matInput #input placeholder="Correo electrónico" type="email">
+      </mat-form-field>
+
+      <mat-form-field appearance="legacy">
+        <mat-label>Contraseña</mat-label>
+        <input matInput #password placeholder="Contraseña" type="password">
+
+      </mat-form-field>
+      <button
+        class="btn btn--bluebtn"
+        mat-flat-button type="submit">Ingresar</button>
+
+    </form>
+  </div>
+
+</section>

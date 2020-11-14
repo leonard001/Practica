@@ -7,6 +7,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { MedicalServicesComponent } from './medical-services/medical-services.component';
 import { ComponentsModule } from '../components/components.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -16,7 +17,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CommonModule,
     MaterialModule,
     AppRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

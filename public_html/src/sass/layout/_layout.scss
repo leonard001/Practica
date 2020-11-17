@@ -279,19 +279,19 @@
 }
 
 .mtA {
-	margin-top: auto;
+	margin-top: auto!important;
 }
 
 .mlA {
-	margin-left: auto;
+	margin-left: auto!important;
 }
 
 .mrA {
-	margin-right: auto;
+	margin-right: auto!important;
 }
 
 .mbA {
-	margin-bottom: auto;
+	margin-bottom: auto!important;
 }
 
 @include mq(mob) {
